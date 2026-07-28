@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!--==================================================
+                        META
+    ===================================================-->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+          content="{% block meta_description %}Sri Sabari Yogashala | School of Yoga | Varkala | Kerala | India{% endblock %}">
+
+    <meta name="keywords"
+          content="Yoga, Yoga Teacher Training, Varkala, Kerala, Yoga Alliance, Ayurveda Retreat">
+
+    <meta name="author"
+          content="Sri Sabari Yogashala">
+
+    <meta name="theme-color"
+          content="#F8F5EF">
+
+    <!--==================================================
+                        TITLE
+    ===================================================-->
+
+    <title>
+
+        {% block title %}
+
+        Sri Sabari Yogashala
+
+        {% endblock %}
+
+    </title>
+
+    <!--==================================================
+                        FAVICON
+    ===================================================-->
+
+    <link rel="icon"
+          href="{% static 'images/logo/favicon.png' %}">
+
+    <!--==================================================
+                    GOOGLE FONTS
+    ===================================================-->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!--==================================================
+                    BOOTSTRAP
+    ===================================================-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!--==================================================
+                    BOOTSTRAP ICONS
+    ===================================================-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+          rel="stylesheet">
+
+    <!--==================================================
+                        AOS
+    ===================================================-->
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+          rel="stylesheet">
+
+    <!--==================================================
+                    CUSTOM CSS
+    ===================================================-->
+
+    <link rel="stylesheet"
+          href="{% static 'css/style.css' %}">
+
+    {% block extra_css %}
+    {% endblock %}
+
+</head>
+
+<body>
+
+    <!--==================================================
+                        HEADER
+    ===================================================-->
+
+    <header>
+
+        {% include 'partials/navbar.html' %}
+
+    </header>
+
+    <!--==================================================
+                    PAGE CONTENT
+    ===================================================-->
+
+    <main>
+
+        {% block content %}
+
+        {% endblock %}
+
+    </main>
+
+    <!--==================================================
+                    BOOTSTRAP JS
+    ===================================================-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--==================================================
+                        AOS
+    ===================================================-->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!--==================================================
+                    CUSTOM JS
+    ===================================================-->
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+    <!--==================================================
+                    INITIALIZE AOS
+    ===================================================-->
+
+    <script>
+
+        AOS.init({
+
+            duration:800,
+
+            once:true,
+
+            offset:80
+
+        });
+
+    </script>
+
+    {% block extra_js %}
+    {% endblock %}
+    {% include 'partials/footer.html' %}
+
+
+<!--==================================================
+                WHATSAPP
+===================================================-->
+
+<a href="https://wa.me/91XXXXXXXXXX"
+
+   class="whatsapp-btn"
+
+   target="_blank">
+
+    <i class="bi bi-whatsapp"></i>
+
+</a>
+
+<button id="scrollTop"
+
+        class="scroll-top">
+
+    <i class="bi bi-arrow-up"></i>
+
+</button>
+
+</body>
+
+</html>

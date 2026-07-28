@@ -1,0 +1,260 @@
+{% load static %}
+
+<!--==================================================
+                    HEADER
+===================================================-->
+
+<header>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+
+        <div class="container">
+
+            <!--==============================
+                    BRAND
+            ==============================-->
+
+            <a class="navbar-brand d-flex align-items-center"
+               href="{% url 'home' %}">
+
+                <img src="{% static 'images/logo/logo.png' %}"
+                     alt="Sri Sabari Yogashala"
+                     class="brand-logo">
+
+                <div class="ms-3">
+
+                    <h5 class="brand-title mb-0">
+
+                        SRI SABARI YOGASHALA
+
+                    </h5>
+
+                    <small class="brand-subtitle">
+
+                        School of Yoga • Varkala • Kerala
+
+                    </small>
+
+                </div>
+
+            </a>
+
+            <!--==============================
+                    MOBILE TOGGLE
+            ==============================-->
+
+            <button class="navbar-toggler border-0 shadow-none"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu"
+                    aria-controls="mobileMenu"
+                    aria-label="Toggle navigation">
+
+                <i class="bi bi-list"></i>
+
+            </button>
+
+            <!--==============================
+                    DESKTOP MENU
+            ==============================-->
+
+            <div class="collapse navbar-collapse justify-content-end">
+
+                <ul class="navbar-nav align-items-lg-center">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="{% url 'home' %}">
+
+                            HOME
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="{% url 'about' %}">
+
+                            ABOUT
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="{% url 'yoga_ttc' %}">
+
+                            YOGA TTC
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="{% url 'retreats' %}">
+
+                            RETREATS
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="{% url 'contact' %}">
+
+                            CONTACT
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <a href="{% url 'contact' %}"
+
+                   class="btn btn-brand ms-lg-4">
+
+                    Book Your Course
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!--==================================================
+                MOBILE MENU
+===================================================-->
+
+<div class="offcanvas offcanvas-end"
+
+     tabindex="-1"
+
+     id="mobileMenu">
+
+    <div class="offcanvas-header">
+
+        <div class="d-flex align-items-center">
+
+            <img src="{% static 'images/logo/logo.png' %}"
+
+                 class="brand-logo me-2"
+
+                 alt="Logo">
+
+            <div>
+
+                <h6 class="mb-0 brand-title">
+
+                    Sri Sabari Yogashala
+
+                </h6>
+
+                <small>
+
+                    School of Yoga
+
+                </small>
+
+            </div>
+
+        </div>
+
+        <button class="btn-close"
+
+                data-bs-dismiss="offcanvas">
+
+        </button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+
+                <a class="nav-link"
+
+                   href="{% url 'home' %}">
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link"
+
+                   href="{% url 'about' %}">
+
+                    About
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link"
+
+                   href="{% url 'yoga_ttc' %}">
+
+                    Yoga TTC
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link"
+
+                   href="{% url 'retreats' %}">
+
+                    Retreats
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link"
+
+                   href="{% url 'contact' %}">
+
+                    Contact
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <a href="{% url 'contact' %}"
+
+           class="btn btn-brand w-100 mt-4">
+
+            Book Your Course
+
+        </a>
+
+    </div>
+
+</div>

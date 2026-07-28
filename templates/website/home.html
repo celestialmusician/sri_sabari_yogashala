@@ -1,0 +1,1028 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+
+Home | Sri Sabari Yogashala
+
+{% endblock %}
+
+{% block content %}
+
+<!--==================================================
+                    HERO SECTION
+===================================================-->
+
+<section class="hero-section">
+
+    <!-- Hero Image -->
+
+    <img src="{% static 'images/hero/hero.jpg' %}"
+
+         class="hero-image"
+
+         alt="Sri Sabari Yogashala">
+
+    <!-- Overlay -->
+
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+
+        <div class="row align-items-center min-vh-100">
+
+            <!--==============================
+                    HERO CONTENT
+            ==============================-->
+
+            <div class="col-lg-6 offset-lg-6">
+
+                <div class="hero-content"
+
+                     data-aos="fade-up">
+
+                    <span class="hero-badge">
+
+                        Yoga Alliance Registered Yoga School
+
+                        • RYS 200
+
+                    </span>
+
+                    <h1 class="hero-title">
+
+                        SRI SABARI
+
+                        <span>
+
+                            YOGASHALA
+
+                        </span>
+
+                    </h1>
+
+                    <h5 class="hero-location">
+
+                        School of Yoga
+
+                        <br>
+
+                        Varkala • Kerala • India
+
+                    </h5>
+
+                    <p class="hero-text">
+
+                        Traditional Yoga
+
+                        • Authentic Learning
+
+                        • Holistic Living
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="{% url 'yoga_ttc' %}"
+
+                           class="btn btn-brand">
+
+                            Explore Courses
+
+                        </a>
+
+                        <a href="{% url 'contact' %}"
+
+                           class="btn btn-outline-brand">
+
+                            Book Course
+
+                        </a>
+
+                        <a href="#"
+
+                           class="btn btn-success rounded-pill">
+
+                            WhatsApp
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                QUICK HIGHLIGHTS
+===================================================-->
+
+<section class="quick-highlights">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="highlight-box">
+
+                    <i class="bi bi-award"></i>
+
+                    <h5>RYS 200</h5>
+
+                    <p>
+
+                        Yoga Alliance Registered
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="highlight-box">
+
+                    <i class="bi bi-globe2"></i>
+
+                    <h5>International</h5>
+
+                    <p>
+
+                        Students From Around The World
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="highlight-box">
+
+                    <i class="bi bi-tree"></i>
+
+                    <h5>Traditional Yoga</h5>
+
+                    <p>
+
+                        Authentic Yogic Lifestyle
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="highlight-box">
+
+                    <i class="bi bi-geo-alt"></i>
+
+                    <h5>Varkala</h5>
+
+                    <p>
+
+                        Kerala • India
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                    WELCOME
+===================================================-->
+
+<section class="welcome-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!--==================================
+                    IMAGE
+            ===================================-->
+
+            <div class="col-lg-6">
+
+                <div class="welcome-image">
+
+                    <img src="{% static 'images/home/welcome.jpg' %}"
+
+                        alt="Sri Sabari Yogashala"
+
+                        class="img-fluid">
+
+                </div>
+
+            </div>
+
+            <!--==================================
+                    CONTENT
+            ===================================-->
+
+            <div class="col-lg-6">
+
+                <span class="section-badge">
+
+                    About Sri Sabari Yogashala
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Rooted in Tradition.
+
+                    <br>
+
+                    Inspired by Purpose.
+
+                    <br>
+
+                    Open to the World.
+
+                </h2>
+
+                <p class="section-text">
+
+                    Sri Sabari Yogashala was founded by Sunila and Arun,
+
+                    a husband-and-wife team whose personal journey with
+
+                    yoga inspired a shared purpose — to share its positive
+
+                    and transformative essence with others.
+
+                </p>
+
+                <p class="section-text">
+
+                    Located in the peaceful coastal town of Varkala,
+
+                    Kerala, we welcome students from India and around
+
+                    the world to experience authentic yoga in a calm,
+
+                    supportive and traditional environment.
+
+                </p>
+
+                <div class="mt-4">
+
+                    <a href="{% url 'about' %}"
+
+                        class="btn btn-brand">
+
+                        Discover Our Story
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                    OUR PROGRAMS
+===================================================-->
+
+<section class="programs-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-badge">
+
+                Our Programs
+
+            </span>
+
+            <h2 class="section-title">
+
+                Begin Your Yoga Journey
+
+            </h2>
+
+            <p class="section-text mx-auto">
+
+                Whether you aspire to become a certified yoga teacher or seek a rejuvenating retreat, Sri Sabari Yogashala offers authentic programs rooted in traditional yoga and holistic wellbeing.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- 200 Hour TTC -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="program-card featured">
+
+                    <div class="program-image">
+
+                        <img src="{% static 'images/programs/ttc200.jpg' %}"
+
+                             alt="200 Hour Yoga TTC">
+
+                        <span class="program-tag">
+
+                            Featured
+
+                        </span>
+
+                    </div>
+
+                    <div class="program-content">
+
+                        <h4>
+
+                            200 Hour Yoga Teacher Training
+
+                        </h4>
+
+                        <p>
+
+                            Our flagship Yoga Alliance Registered RYS 200 program for aspiring yoga teachers and dedicated practitioners.
+
+                        </p>
+
+                        <a href="{% url 'yoga_ttc' %}"
+
+                           class="btn btn-brand">
+
+                            Explore Program
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 100 Hour -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="program-card">
+
+                    <div class="program-image">
+
+                        <img src="{% static 'images/programs/immersion100.jpg' %}"
+
+                             alt="100 Hour Program">
+
+                    </div>
+
+                    <div class="program-content">
+
+                        <h4>
+
+                            100 Hour Yoga Immersion
+
+                        </h4>
+
+                        <p>
+
+                            Deepen your personal yoga practice through a structured short-term immersion experience.
+
+                        </p>
+
+                        <a href="{% url 'yoga_ttc' %}"
+
+                           class="btn btn-outline-brand">
+
+                            Learn More
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 3 Day -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="program-card">
+
+                    <div class="program-image">
+
+                        <img src="{% static 'images/programs/retreat3.jpg' %}"
+
+                             alt="3 Day Retreat">
+
+                    </div>
+
+                    <div class="program-content">
+
+                        <h4>
+
+                            3-Day Yoga & Ayurveda Retreat
+
+                        </h4>
+
+                        <p>
+
+                            A refreshing short wellness retreat combining yoga, meditation and Ayurveda.
+
+                        </p>
+
+                        <a href="{% url 'retreats' %}"
+
+                           class="btn btn-outline-brand">
+
+                            View Retreat
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 7 Day -->
+
+            <div class="col-lg-6">
+
+                <div class="program-card">
+
+                    <div class="program-image">
+
+                        <img src="{% static 'images/programs/retreat7.jpg' %}"
+
+                             alt="7 Day Retreat">
+
+                    </div>
+
+                    <div class="program-content">
+
+                        <h4>
+
+                            7-Day Yoga & Ayurveda Retreat
+
+                        </h4>
+
+                        <p>
+
+                            Our most popular retreat designed to help you reconnect, rejuvenate and restore.
+
+                        </p>
+
+                        <a href="{% url 'retreats' %}"
+
+                           class="btn btn-outline-brand">
+
+                            Explore
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 14 Day -->
+
+            <div class="col-lg-6">
+
+                <div class="program-card">
+
+                    <div class="program-image">
+
+                        <img src="{% static 'images/programs/retreat14.jpg' %}"
+
+                             alt="14 Day Retreat">
+
+                    </div>
+
+                    <div class="program-content">
+
+                        <h4>
+
+                            14-Day Yoga & Ayurveda Retreat
+
+                        </h4>
+
+                        <p>
+
+                            A complete rejuvenation experience with yoga, Ayurveda and mindful living in Kerala.
+
+                        </p>
+
+                        <a href="{% url 'retreats' %}"
+
+                           class="btn btn-outline-brand">
+
+                            Explore
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                WHY CHOOSE US
+===================================================-->
+
+<section class="why-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-badge">
+
+                Why Choose Us
+
+            </span>
+
+            <h2 class="section-title">
+
+                A Journey Beyond Yoga Practice
+
+            </h2>
+
+            <p class="section-text mx-auto">
+
+                Experience authentic yoga education in a peaceful learning environment, guided by experienced teachers and rooted in traditional yogic wisdom.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <i class="bi bi-award"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Yoga Alliance RYS 200
+
+                    </h4>
+
+                    <p>
+
+                        Internationally recognised Yoga Teacher Training following approved RYS 200 standards.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <i class="bi bi-person-heart"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Personal Attention
+
+                    </h4>
+
+                    <p>
+
+                        Small batches allow every student to receive individual guidance and support.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <i class="bi bi-flower1"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Traditional Yoga
+
+                    </h4>
+
+                    <p>
+
+                        Learn authentic Asana, Pranayama, Meditation and Yogic Lifestyle from experienced teachers.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <i class="bi bi-globe2"></i>
+
+                    </div>
+
+                    <h4>
+
+                        International Students
+
+                    </h4>
+
+                    <p>
+
+                        Welcoming practitioners from around the world in a friendly and inclusive environment.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <i class="bi bi-geo-alt"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Beautiful Varkala
+
+                    </h4>
+
+                    <p>
+
+                        Study yoga in Kerala's peaceful coastal destination surrounded by nature and wellness.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <i class="bi bi-brightness-high"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Holistic Living
+
+                    </h4>
+
+                    <p>
+
+                        Discover yoga as a complete way of life that nurtures body, mind and inner awareness.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                YOGA ALLIANCE
+===================================================-->
+
+<section class="alliance-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!--==============================
+                    IMAGE
+            ==============================-->
+
+            <div class="col-lg-5">
+
+                <div class="alliance-image">
+
+                    <img src="{% static 'images/home/yoga-alliance.jpg' %}"
+
+                         class="img-fluid"
+
+                         alt="Yoga Alliance">
+
+                </div>
+
+            </div>
+
+            <!--==============================
+                    CONTENT
+            ==============================-->
+
+            <div class="col-lg-7">
+
+                <span class="section-badge">
+
+                    International Recognition
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Yoga Alliance Registered
+
+                    <br>
+
+                    RYS 200 School
+
+                </h2>
+
+                <p class="section-text">
+
+                    Sri Sabari Yogashala is a Yoga Alliance Registered Yoga School (RYS 200), committed to delivering authentic teacher training while maintaining internationally recognised educational standards.
+
+                </p>
+
+                <p class="section-text">
+
+                    Our curriculum combines traditional yogic wisdom with structured teacher training, helping students develop the confidence, knowledge and practical skills required to begin their teaching journey.
+
+                </p>
+
+                <div class="row mt-4 g-3">
+
+                    <div class="col-sm-6">
+
+                        <div class="mini-card">
+
+                            <i class="bi bi-patch-check-fill"></i>
+
+                            <span>
+
+                                Internationally Recognised
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6">
+
+                        <div class="mini-card">
+
+                            <i class="bi bi-mortarboard-fill"></i>
+
+                            <span>
+
+                                Structured Curriculum
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6">
+
+                        <div class="mini-card">
+
+                            <i class="bi bi-book-half"></i>
+
+                            <span>
+
+                                Traditional Learning
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6">
+
+                        <div class="mini-card">
+
+                            <i class="bi bi-globe-central-south-asia"></i>
+
+                            <span>
+
+                                Global Community
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                EXPERIENCE VARKALA
+===================================================-->
+
+<section class="varkala-section">
+
+    <div class="varkala-overlay"></div>
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="varkala-content text-center">
+
+                    <span class="section-badge">
+
+                        Experience Varkala
+
+                    </span>
+
+                    <h2 class="section-title text-white">
+
+                        Learn Yoga
+
+                        <br>
+
+                        Where Nature Inspires You
+
+                    </h2>
+
+                    <p class="text-white">
+
+                        Nestled along the stunning cliffs of Varkala, Kerala,
+
+                        Sri Sabari Yogashala offers a peaceful setting where
+
+                        yoga, nature and holistic living come together.
+
+                        Experience breathtaking beaches, tropical greenery,
+
+                        authentic Ayurveda and a calm atmosphere that supports
+
+                        your personal growth and transformation.
+
+                    </p>
+
+                    <a href="{% url 'contact' %}"
+
+                       class="btn btn-brand mt-3">
+
+                        Begin Your Journey
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                FINAL CTA
+===================================================-->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <span class="section-badge">
+
+                Begin Your Journey
+
+            </span>
+
+            <h2 class="section-title">
+
+                Start Your Yoga Journey
+
+                <br>
+
+                With Sri Sabari Yogashala
+
+            </h2>
+
+            <p class="section-text mx-auto">
+
+                Whether you wish to become a certified yoga teacher or experience
+                a peaceful yoga retreat in Varkala, we are here to welcome you.
+                Join our community and begin a journey of learning, balance and transformation.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="{% url 'yoga_ttc' %}"
+
+                   class="btn btn-brand">
+
+                    Explore Courses
+
+                </a>
+
+                <a href="{% url 'contact' %}"
+
+                   class="btn btn-outline-brand">
+
+                    Book Your Course
+
+                </a>
+
+                <a href="#"
+
+                   class="btn btn-success rounded-pill">
+
+                    WhatsApp Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

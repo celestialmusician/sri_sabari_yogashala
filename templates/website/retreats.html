@@ -1,0 +1,1142 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+
+Yoga Retreats | Sri Sabari Yogashala
+
+{% endblock %}
+
+{% block content %}
+
+<!--==================================================
+                RETREAT HERO
+===================================================-->
+
+<section class="page-hero">
+
+    <img src="{% static 'images/retreat/retreat-hero.jpg' %}"
+
+         class="page-hero-image"
+
+         alt="Yoga Retreat">
+
+    <div class="page-hero-overlay"></div>
+
+    <div class="container">
+
+        <div class="row align-items-center min-vh-50">
+
+            <div class="col-lg-8">
+
+                <div class="page-hero-content">
+
+                    <span class="hero-badge">
+
+                        Yoga • Wellness • Ayurveda • Meditation
+
+                    </span>
+
+                    <h1>
+
+                        Yoga Retreats
+
+                        <br>
+
+                        In Beautiful
+
+                        <br>
+
+                        Varkala
+
+                    </h1>
+
+                    <p>
+
+                        Escape the stress of everyday life and reconnect with yourself through authentic yoga, meditation, nourishing food and peaceful coastal living.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="{% url 'contact' %}"
+
+                           class="btn btn-brand">
+
+                            Book Retreat
+
+                        </a>
+
+                        <a href="#retreat-overview"
+
+                           class="btn btn-outline-brand">
+
+                            Explore Retreats
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+            RETREAT OVERVIEW
+===================================================-->
+
+<section id="retreat-overview" class="retreat-overview">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- IMAGE -->
+
+            <div class="col-lg-6" data-aos="fade-right">
+
+                <img src="{% static 'images/retreat/retreat-overview.jpg' %}"
+
+                     class="img-fluid retreat-overview-image"
+
+                     alt="Yoga Retreat Experience">
+
+            </div>
+
+            <!-- CONTENT -->
+
+            <div class="col-lg-6" data-aos="fade-left">
+
+                <span class="section-badge">
+
+                    Welcome To Our Retreats
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Reconnect With Yourself In Nature
+
+                </h2>
+
+                <p class="section-text">
+
+                    Our yoga retreats are thoughtfully designed to help you slow down, reconnect with yourself, and experience authentic yogic living. Surrounded by the natural beauty of Varkala, each retreat combines yoga, meditation, mindful relaxation, nourishing food, and peaceful surroundings.
+
+                </p>
+
+                <p class="section-text">
+
+                    Whether you are beginning your yoga journey or simply looking for a restorative escape, our retreats offer the perfect balance of wellness, personal growth, and inner peace.
+
+                </p>
+
+                <div class="facility-list">
+
+                    <div class="facility-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Daily Yoga Sessions
+
+                    </div>
+
+                    <div class="facility-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Guided Meditation
+
+                    </div>
+
+                    <div class="facility-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Peaceful Coastal Environment
+
+                    </div>
+
+                    <div class="facility-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Authentic Yogic Lifestyle
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                RETREAT PACKAGES
+===================================================-->
+
+<section class="retreat-packages">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-badge">
+
+                Retreat Packages
+
+            </span>
+
+            <h2 class="section-title">
+
+                Choose Your Perfect Retreat
+
+            </h2>
+
+            <p class="section-text mx-auto">
+
+                Whether you have a weekend or two weeks, we offer retreat experiences that help you reconnect with yourself through yoga, meditation, healthy food and nature.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- 3 DAY -->
+
+            <div class="col-lg-4">
+
+                <div class="retreat-card">
+
+                    <div class="retreat-days">
+
+                        3 Days
+
+                    </div>
+
+                    <h3>
+
+                        Weekend Retreat
+
+                    </h3>
+
+                    <p>
+
+                        Perfect for beginners and travelers seeking a short wellness escape.
+
+                    </p>
+
+                    <ul>
+
+                        <li>Daily Yoga</li>
+
+                        <li>Meditation</li>
+
+                        <li>Healthy Meals</li>
+
+                        <li>Accommodation</li>
+
+                    </ul>
+
+                    <a href="{% url 'contact' %}"
+
+                       class="btn btn-brand w-100">
+
+                        Enquire Now
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- 7 DAY -->
+
+            <div class="col-lg-4">
+
+                <div class="retreat-card featured">
+
+                    <div class="popular-tag">
+
+                        Most Popular
+
+                    </div>
+
+                    <div class="retreat-days">
+
+                        7 Days
+
+                    </div>
+
+                    <h3>
+
+                        Wellness Retreat
+
+                    </h3>
+
+                    <p>
+
+                        A complete week of yoga, meditation, Ayurveda-inspired living and relaxation.
+
+                    </p>
+
+                    <ul>
+
+                        <li>Twice Daily Yoga</li>
+
+                        <li>Meditation</li>
+
+                        <li>Healthy Meals</li>
+
+                        <li>Accommodation</li>
+
+                        <li>Nature Excursions</li>
+
+                    </ul>
+
+                    <a href="{% url 'contact' %}"
+
+                       class="btn btn-brand w-100">
+
+                        Enquire Now
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- 14 DAY -->
+
+            <div class="col-lg-4">
+
+                <div class="retreat-card">
+
+                    <div class="retreat-days">
+
+                        14 Days
+
+                    </div>
+
+                    <h3>
+
+                        Transformation Retreat
+
+                    </h3>
+
+                    <p>
+
+                        Deepen your yoga journey with immersive practice and holistic wellness.
+
+                    </p>
+
+                    <ul>
+
+                        <li>Advanced Yoga</li>
+
+                        <li>Pranayama</li>
+
+                        <li>Meditation</li>
+
+                        <li>Accommodation</li>
+
+                        <li>Healthy Meals</li>
+
+                        <li>Lifestyle Guidance</li>
+
+                    </ul>
+
+                    <a href="{% url 'contact' %}"
+
+                       class="btn btn-brand w-100">
+
+                        Enquire Now
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                WHAT'S INCLUDED
+===================================================-->
+
+<section class="included-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-badge">
+
+                What's Included
+
+            </span>
+
+            <h2 class="section-title">
+
+                Everything You Need For A Peaceful Retreat
+
+            </h2>
+
+            <p class="section-text mx-auto">
+
+                Every retreat package is thoughtfully designed to provide a comfortable, authentic and memorable wellness experience.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- 1 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="include-card">
+
+                    <i class="bi bi-person-standing"></i>
+
+                    <h5>Daily Yoga</h5>
+
+                    <p>
+
+                        Morning & evening yoga sessions.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 2 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="include-card">
+
+                    <i class="bi bi-flower1"></i>
+
+                    <h5>Meditation</h5>
+
+                    <p>
+
+                        Guided meditation and mindfulness.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 3 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="include-card">
+
+                    <i class="bi bi-house-door-fill"></i>
+
+                    <h5>Accommodation</h5>
+
+                    <p>
+
+                        Comfortable private or shared rooms.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 4 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="include-card">
+
+                    <i class="bi bi-cup-hot-fill"></i>
+
+                    <h5>Healthy Meals</h5>
+
+                    <p>
+
+                        Fresh vegetarian yogic cuisine.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 5 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="include-card">
+
+                    <i class="bi bi-tree-fill"></i>
+
+                    <h5>Nature Walks</h5>
+
+                    <p>
+
+                        Explore the beauty of Varkala.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 6 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="include-card">
+
+                    <i class="bi bi-book-half"></i>
+
+                    <h5>Yoga Philosophy</h5>
+
+                    <p>
+
+                        Traditional yogic wisdom sessions.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 7 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="include-card">
+
+                    <i class="bi bi-wifi"></i>
+
+                    <h5>Free Wi-Fi</h5>
+
+                    <p>
+
+                        Stay connected during your retreat.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 8 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="include-card">
+
+                    <i class="bi bi-heart-pulse-fill"></i>
+
+                    <h5>Holistic Wellness</h5>
+
+                    <p>
+
+                        Relax, heal and recharge naturally.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+            DAILY RETREAT EXPERIENCE
+===================================================-->
+
+<section class="retreat-timeline">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-badge">
+
+                Daily Retreat Experience
+
+            </span>
+
+            <h2 class="section-title">
+
+                Experience A Peaceful Day
+
+            </h2>
+
+            <p class="section-text mx-auto">
+
+                Every day is thoughtfully designed to balance movement, mindfulness, nourishment and relaxation.
+
+            </p>
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+
+                    6:30 AM
+
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+
+                        Sunrise Meditation
+
+                    </h4>
+
+                    <p>
+
+                        Begin your day with guided meditation and breathing exercises.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+
+                    7:30 AM
+
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+
+                        Morning Yoga
+
+                    </h4>
+
+                    <p>
+
+                        Gentle Hatha Yoga overlooking the peaceful surroundings.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+
+                    9:00 AM
+
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+
+                        Healthy Breakfast
+
+                    </h4>
+
+                    <p>
+
+                        Fresh vegetarian breakfast prepared with seasonal ingredients.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+
+                    Afternoon
+
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+
+                        Relax & Explore
+
+                    </h4>
+
+                    <p>
+
+                        Beach walks, Ayurvedic therapies, self-study or peaceful relaxation.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+
+                    5:30 PM
+
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+
+                        Sunset Yoga
+
+                    </h4>
+
+                    <p>
+
+                        End the day with mindful movement and deep relaxation.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+
+                    Evening
+
+                </div>
+
+                <div class="timeline-content">
+
+                    <h4>
+
+                        Dinner & Silence
+
+                    </h4>
+
+                    <p>
+
+                        Enjoy a nourishing dinner followed by peaceful reflection.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                WHY VARKALA
+===================================================-->
+
+<section class="why-varkala">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- IMAGE -->
+
+            <div class="col-lg-6"
+
+                 data-aos="fade-right">
+
+                <img src="{% static 'images/retreat/varkala-retreat.jpg' %}"
+
+                     class="img-fluid varkala-image"
+
+                     alt="Varkala Cliff">
+
+            </div>
+
+            <!-- CONTENT -->
+
+            <div class="col-lg-6"
+
+                 data-aos="fade-left">
+
+                <span class="section-badge">
+
+                    Why Varkala?
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Discover Kerala's
+
+                    Most Inspiring
+
+                    Yoga Destination
+
+                </h2>
+
+                <p class="section-text">
+
+                    Varkala is one of India's most loved wellness destinations, where dramatic sea cliffs meet golden beaches, lush palm groves and a peaceful spiritual atmosphere. It is the perfect place to disconnect from daily stress and reconnect with yourself.
+
+                </p>
+
+                <p class="section-text">
+
+                    From breathtaking sunsets over the Arabian Sea to authentic Ayurveda, welcoming cafés and vibrant local culture, Varkala offers an unforgettable experience beyond the yoga mat.
+
+                </p>
+
+                <div class="facility-list">
+
+                    <div class="facility-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Arabian Sea Views
+
+                    </div>
+
+                    <div class="facility-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Famous Varkala Cliff
+
+                    </div>
+
+                    <div class="facility-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Authentic Ayurveda
+
+                    </div>
+
+                    <div class="facility-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Peaceful Beach Walks
+
+                    </div>
+
+                    <div class="facility-item">
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        Tropical Climate
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+                RETREAT FAQ
+===================================================-->
+
+<section class="retreat-faq">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-badge">
+
+                Frequently Asked Questions
+
+            </span>
+
+            <h2 class="section-title">
+
+                Everything You Need To Know
+
+            </h2>
+
+            <p class="section-text mx-auto">
+
+                Here are some of the most common questions asked by our retreat guests.
+
+            </p>
+
+        </div>
+
+        <div class="accordion" id="retreatFaq">
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button"
+
+                            type="button"
+
+                            data-bs-toggle="collapse"
+
+                            data-bs-target="#rfaq1">
+
+                        Can beginners join the retreat?
+
+                    </button>
+
+                </h2>
+
+                <div id="rfaq1"
+
+                     class="accordion-collapse collapse show"
+
+                     data-bs-parent="#retreatFaq">
+
+                    <div class="accordion-body">
+
+                        Yes. Our retreats are suitable for complete beginners as well as experienced practitioners.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+
+                            type="button"
+
+                            data-bs-toggle="collapse"
+
+                            data-bs-target="#rfaq2">
+
+                        Are meals included?
+
+                    </button>
+
+                </h2>
+
+                <div id="rfaq2"
+
+                     class="accordion-collapse collapse"
+
+                     data-bs-parent="#retreatFaq">
+
+                    <div class="accordion-body">
+
+                        Yes. Fresh vegetarian yogic meals are included throughout your stay.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+
+                            type="button"
+
+                            data-bs-toggle="collapse"
+
+                            data-bs-target="#rfaq3">
+
+                        Is airport pickup available?
+
+                    </button>
+
+                </h2>
+
+                <div id="rfaq3"
+
+                     class="accordion-collapse collapse"
+
+                     data-bs-parent="#retreatFaq">
+
+                    <div class="accordion-body">
+
+                        Airport pickup can be arranged upon request. Please contact us before your arrival.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+
+                            type="button"
+
+                            data-bs-toggle="collapse"
+
+                            data-bs-target="#rfaq4">
+
+                        What should I bring?
+
+                    </button>
+
+                </h2>
+
+                <div id="rfaq4"
+
+                     class="accordion-collapse collapse"
+
+                     data-bs-parent="#retreatFaq">
+
+                    <div class="accordion-body">
+
+                        Comfortable clothing, personal essentials, and an open mind. Yoga mats and practice equipment are provided.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+
+                            type="button"
+
+                            data-bs-toggle="collapse"
+
+                            data-bs-target="#rfaq5">
+
+                        Can I extend my stay?
+
+                    </button>
+
+                </h2>
+
+                <div id="rfaq5"
+
+                     class="accordion-collapse collapse"
+
+                     data-bs-parent="#retreatFaq">
+
+                    <div class="accordion-body">
+
+                        Depending on room availability, extended stays may be arranged. Please contact us in advance.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==================================================
+            BOOK RETREAT CTA
+===================================================-->
+
+<section class="retreat-cta">
+
+    <div class="container">
+
+        <div class="ttc-cta-box">
+
+            <span class="section-badge">
+
+                Begin Your Retreat
+
+            </span>
+
+            <h2 class="section-title">
+
+                Escape. Relax. Reconnect.
+
+            </h2>
+
+            <p class="section-text">
+
+                Discover authentic yoga, peaceful surroundings and holistic wellness in the heart of Varkala. Your retreat experience begins here.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="{% url 'contact' %}"
+
+                   class="btn btn-brand">
+
+                    Book Your Retreat
+
+                </a>
+
+                <a href="{% url 'contact' %}"
+
+                   class="btn btn-outline-brand">
+
+                    Contact Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

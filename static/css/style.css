@@ -196,15 +196,23 @@ h1,h2,h3,h4,h5,h6{
 
 .btn-outline-brand{
 
-    border:2px solid var(--secondary);
+    border:2px solid #873c0e;
 
-    color:var(--secondary);
+    color:#873c0e;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
 
     padding:14px 30px;
 
     border-radius:50px;
 
     font-weight:600;
+
+    transition:.35s ease;
 
 }
 
@@ -1228,9 +1236,11 @@ h1,h2,h3,h4,h5,h6{
 
 .cta-section{
 
-    background:#fff;
+    background:#ffffff;
 
 }
+
+
 
 .cta-box{
 
@@ -1267,6 +1277,8 @@ h1,h2,h3,h4,h5,h6{
     flex-wrap:wrap;
 
 }
+
+
 
 /*==================================================
                 FOOTER

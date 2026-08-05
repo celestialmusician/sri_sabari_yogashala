@@ -2,13 +2,17 @@
                 GOOGLE FONTS
 ==================================================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /*==================================================
                 ROOT VARIABLES
 ==================================================*/
 
 :root{
+
+    --font-heading: 'Cinzel', serif;
+
+    --font-body: 'Plus Jakarta Sans', sans-serif;
 
     --primary:#A66A2C;
 
@@ -52,11 +56,13 @@ html{
 
     scroll-behavior:smooth;
 
+    overflow-x:hidden;
+
 }
 
 body{
 
-    font-family:'Manrope',sans-serif;
+    font-family:var(--font-body);
 
     background:var(--accent);
 
@@ -110,7 +116,7 @@ section{
 
 h1,h2,h3,h4,h5,h6{
 
-    font-family:'Cormorant Garamond',serif;
+    font-family:var(--font-heading);
 
     color:var(--dark);
 
@@ -194,15 +200,23 @@ h1,h2,h3,h4,h5,h6{
 
 .btn-outline-brand{
 
-    border:2px solid var(--secondary);
+    border:2px solid #873c0e;
 
-    color:var(--secondary);
+    color:#eba28a;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
 
     padding:14px 30px;
 
     border-radius:50px;
 
     font-weight:600;
+
+    transition:.35s ease;
 
 }
 
@@ -300,7 +314,7 @@ h1,h2,h3,h4,h5,h6{
 
     border-bottom:1px solid rgba(0,0,0,.05);
 
-    z-index:9999;
+    z-index:1030;
 
 }
 
@@ -322,19 +336,37 @@ h1,h2,h3,h4,h5,h6{
 
 .navbar-brand{
 
-    padding:12px;
+    display:flex;
+
+    align-items:center;
+
+    flex:1;
+
+    min-width:0;
+
+    margin:0;
+
+    padding:0;
 
 }
 
 .brand-logo{
 
-    width:46px;
+    width:56px;
 
-    height:46px;
+    height:56px;
 
     object-fit:contain;
 
     flex-shrink:0;
+
+}
+
+.brand-content{
+
+    margin-left:12px;
+
+    min-width:0;
 
 }
 
@@ -559,10 +591,6 @@ h1,h2,h3,h4,h5,h6{
     text-align:left;
 
     padding:25px;
-
-    padding-top: 80px;
-
-    margin-top: 50px;
 
     background:rgba(255,255,255,.18);
 
@@ -1212,9 +1240,11 @@ h1,h2,h3,h4,h5,h6{
 
 .cta-section{
 
-    background:#fff;
+    background:#ffffff;
 
 }
+
+
 
 .cta-box{
 
@@ -1252,6 +1282,8 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
+
+
 /*==================================================
                 FOOTER
 ==================================================*/
@@ -1268,9 +1300,15 @@ h1,h2,h3,h4,h5,h6{
 
 .footer-logo{
 
-    width:70px;
+    width:55px;
 
-    margin-bottom:20px;
+    height:55px;
+
+    object-fit:contain;
+
+    margin-bottom:0;
+
+    flex-shrink:0;
 
 }
 
@@ -1278,7 +1316,11 @@ h1,h2,h3,h4,h5,h6{
 
     color:#fff;
 
-    margin-bottom:12px;
+    margin-bottom:0;
+
+    font-size:1.45rem;
+
+    line-height:1.2;
 
 }
 
@@ -1588,11 +1630,11 @@ h1,h2,h3,h4,h5,h6{
 
 .page-hero-content p{
 
-    max-width:260px;
+    max-width:600px;
 
     color:rgba(255,255,255,.9);
 
-    margin:auto;
+    margin:0;
 
 }
 
@@ -3590,3 +3632,8 @@ h1,h2,h3,h4,h5,h6{
     }
 
 }
+
+
+
+
+

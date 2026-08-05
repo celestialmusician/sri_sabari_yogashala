@@ -12,9 +12,4 @@ urlpatterns = [
     path('retreats/', views.RetreatsView.as_view(), name='retreats'),
 
     path('contact/', views.ContactView.as_view(), name='contact'),
-
-    path('yoga-ttc/', views.YogaTTCView.as_view(), name='yoga_ttc'),
-
-    path('retreats/', views.RetreatView.as_view(),name='retreats')
-
 ]

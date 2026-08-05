@@ -30,7 +30,7 @@
 
 .brand-title{
 
-    font-family:'Cormorant Garamond',serif;
+    font-family:var(--font-heading, 'Cinzel', serif);
 
     font-size:1.45rem;
 

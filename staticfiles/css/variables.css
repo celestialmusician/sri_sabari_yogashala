@@ -4,6 +4,10 @@
 
 :root{
 
+    --font-heading: 'Cinzel', serif;
+
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+
     --primary:#C97A2B;
 
     --secondary:#3E5F44;
@@ -50,7 +54,7 @@ html{
 
 body{
 
-    font-family:'Manrope',sans-serif;
+    font-family:var(--font-body);
 
     background:var(--accent);
 
@@ -92,7 +96,7 @@ section{
 
 h1,h2,h3,h4,h5,h6{
 
-    font-family:'Cormorant Garamond',serif;
+    font-family:var(--font-heading);
 
     color:var(--dark);
 

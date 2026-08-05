@@ -35,28 +35,3 @@ class ContactView(View):
     def get(self, request, *args, **kwargs):
 
         return render(request, 'website/contact.html')
-
-class YogaTTCView(View):
-
-    def get(self,request,*args,**kwargs):
-
-        return render(
-
-            request,
-
-            'website/yoga_ttc.html'
-
-        )    
-
-class RetreatView(View):
-
-    def get(self,request,*args,**kwargs):
-
-        return render(
-
-            request,
-
-            'website/retreats.html'
-
-        )
-    

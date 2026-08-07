@@ -17,9 +17,11 @@
             <a class="navbar-brand d-flex align-items-center"
                href="{% url 'home' %}">
 
-                <img src="{% static 'images/logo/logo.png' %}"
-                     alt="Sri Sabari Yogashala"
-                     class="brand-logo">
+                <div class="brand-logo-frame">
+                    <img src="{% static 'images/logo/logo.png' %}"
+                         alt="Sri Sabari Yogashala"
+                         class="brand-logo">
+                </div>
 
                 <div class="brand-content">
 
@@ -31,7 +33,7 @@
 
                     <small class="brand-subtitle">
 
-                        School of Yoga • Varkala • Kerala
+                        School of Yoga <span class="brand-dot">•</span> Varkala <span class="brand-dot">•</span> Kerala
 
                     </small>
 
@@ -149,23 +151,23 @@
 
         <div class="d-flex align-items-center">
 
-            <img src="{% static 'images/logo/logo.png' %}"
-
-                 class="brand-logo me-2"
-
-                 alt="Logo">
+            <div class="brand-logo-frame me-2">
+                <img src="{% static 'images/logo/logo.png' %}"
+                     class="brand-logo"
+                     alt="Logo">
+            </div>
 
             <div>
 
                 <h6 class="mb-0 brand-title">
 
-                    Sri Sabari Yogashala
+                    SRI SABARI YOGASHALA
 
                 </h6>
 
-                <small>
+                <small class="brand-subtitle">
 
-                    School of Yoga
+                    School of Yoga • Varkala
 
                 </small>
 

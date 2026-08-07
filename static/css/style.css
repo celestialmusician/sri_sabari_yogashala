@@ -1342,11 +1342,11 @@ h1,h2,h3,h4,h5,h6{
 
 .footer-logo-ring{
 
-    width:60px;
+    width:85px;
 
-    height:60px;
+    height:85px;
 
-    border-radius:16px;
+    border-radius:20px;
 
     background:rgba(255,255,255,.95);
 
@@ -1354,7 +1354,7 @@ h1,h2,h3,h4,h5,h6{
 
     box-shadow:0 6px 20px rgba(0,0,0,.3);
 
-    padding:6px;
+    padding:8px;
 
     display:flex;
 

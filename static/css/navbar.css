@@ -20,11 +20,11 @@
 
 .brand-logo-frame{
 
-    width:56px;
+    width:76px;
 
-    height:56px;
+    height:76px;
 
-    border-radius:14px;
+    border-radius:18px;
 
     background:rgba(255,255,255,.92);
 
@@ -32,7 +32,7 @@
 
     box-shadow:0 4px 15px rgba(201,122,43,.12);
 
-    padding:5px;
+    padding:6px;
 
     display:flex;
 
@@ -220,11 +220,11 @@
 
     }
 
-    .brand-logo{
+    .brand-logo-frame{
 
-        width:54px;
+        width:62px;
 
-        height:54px;
+        height:62px;
 
     }
 
@@ -248,11 +248,11 @@
 
 @media(max-width:576px){
 
-    .brand-logo{
+    .brand-logo-frame{
 
-        width:48px;
+        width:54px;
 
-        height:48px;
+        height:54px;
 
     }
 

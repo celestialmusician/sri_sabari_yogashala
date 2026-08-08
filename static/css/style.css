@@ -1633,6 +1633,73 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*==================================================
+            FLOATING CALL / CTA BUTTON
+==================================================*/
+
+.call-cta-btn {
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #C97A2B 0%, #A66A2C 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    z-index: 999;
+    box-shadow: 0 6px 24px rgba(201, 122, 43, 0.45);
+    animation: callFloat 3.5s ease-in-out infinite;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+/* Gentle floating up/down */
+@keyframes callFloat {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-7px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Pulsing ring around the CTA button */
+.call-cta-btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(201, 122, 43, 0.45);
+    animation: callRingPulse 2.2s ease-out infinite;
+    z-index: -1;
+}
+
+.call-cta-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(201, 122, 43, 0.25);
+    animation: callRingPulse 2.2s ease-out infinite .6s;
+    z-index: -1;
+}
+
+@keyframes callRingPulse {
+    0%   { transform: scale(1);   opacity: .8; }
+    70%  { transform: scale(1.75); opacity: 0; }
+    100% { transform: scale(1.75); opacity: 0; }
+}
+
+/* Hover — pause float, bounce up */
+.call-cta-btn:hover {
+    color: #fff;
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 14px 36px rgba(201, 122, 43, 0.65);
+    animation-play-state: paused;
+}
+
+/*==================================================
             SCROLL TOP
 ==================================================*/
 

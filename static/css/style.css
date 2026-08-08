@@ -1638,8 +1638,8 @@ h1,h2,h3,h4,h5,h6{
 
 .call-cta-btn {
     position: fixed;
-    left: 24px;
-    bottom: 24px;
+    right: 24px;
+    bottom: 94px;
     width: 58px;
     height: 58px;
     border-radius: 50%;
@@ -1707,9 +1707,9 @@ h1,h2,h3,h4,h5,h6{
 
     position:fixed;
 
-    right:25px;
+    right:28px;
 
-    bottom:100px;
+    bottom:164px;
 
     width:50px;
 
